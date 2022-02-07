@@ -1,0 +1,167 @@
+body, html{
+    width:100%;
+}
+
+body{
+    display:flex;
+    justify-content: flex-end;
+    background-image: url("/Users/alexandravining/repos/odin-signuppage/background-image.jpg");
+    background-size:1500px;
+    background-repeat:no-repeat;
+}
+
+main{
+    flex-grow:1;
+    width:600px;
+    background-color:rgb(250, 250, 250);
+    height:100vh;
+    margin-top:-10px;
+}
+
+a{
+    color:rgb(237, 111, 78);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:rgb(245, 189, 175);
+}
+h1{
+    display:block;
+    flex-grow:3;
+    min-width:200px;
+    padding: 1% 0%;
+    text-align:center;
+    margin-top:250px;
+    margin-left:-10px;
+    background:rgba(0, 0, 0, .6);
+    color:white;
+    font-family:'East Sea Dokdo', sans-serif;
+    font-size:5rem;
+    height:100px;
+}
+
+.logo{
+    width:50px;
+    position:relative;
+    top:10px;
+    left:-20px;
+}
+
+.signUpParagraph{
+    margin-top:15%;
+    margin-left:5%;
+    padding-right:20%;
+    font-family:sans-serif;
+    font-weight:bold;
+    line-height:180%;
+    color:rgb(237, 111, 78);
+    font-size:1.3rem;
+}
+
+fieldset{
+    border-style:none;
+}
+
+.formContainer{
+    background-color:white;
+    padding:20px 0px;
+    border: 1px solid lightgray;
+    border-left:none;
+    border-right:none;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,.1));
+}
+
+legend{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:1.3rem;
+    color: rgb(93, 138, 137);
+    margin-bottom:10px;
+}
+
+fieldset{
+    padding-left:20px;
+}
+
+label{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:.8rem;
+    color: rgb(59, 59, 59);
+    width:40%;
+    display:inline-block;
+}
+
+input{
+    width:35%;
+    display:inline-block;
+    margin-right:4%;
+    height:25px;
+}
+
+button{
+    background:rgb(46, 68, 68);
+    color:white;
+    border:none;
+    padding:10px 30px;
+    font-weight:bold;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.1));
+    border-radius:5px;
+    margin-top:2%;
+    margin-left:55%;
+}
+
+button:hover{
+    background: rgb(114, 153, 153);
+}
+
+.loginPromptText{
+    margin-left:48%;
+    font-family: sans-serif;
+    font-size:.9rem;
+}
+
+@media screen and (max-width:700px){
+    body{
+        flex-direction:column;
+    }
+    h1{ 
+        margin-top:50px;
+    }
+    main{
+        width:96%;
+    }
+    .signUpParagraph{
+        text-align:center;
+        margin-top:20px;
+        width:80%;
+        margin-left:10%;
+    }
+    h1{
+        width:100%;
+    }
+
+    input{
+        margin-bottom:5%;
+        height:30px;
+        width:40%;
+    }
+    label{
+        width:46%;
+    }
+
+    button{
+        width:80%;
+        margin:0 auto;
+        margin-top:5%;
+        margin-left:10%;
+        height:5%;
+    }
+
+    .loginPromptText{
+        margin-left:26%;
+        font-size:1rem;
+    }
+}

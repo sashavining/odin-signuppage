@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><img src="/Users/alexandravining/repos/odin-signuppage/logo.png" alt="logo" class="logo">Navis</h1>
+    <main>
+        <p class="signUpParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, mollitia delectus! Quo laboriosam ea vitae consequuntur laudantium dolor aliquid aperiam! </p>
+        <div class="formContainer">
+        <fieldset>
+            <legend>Let's do this!</legend>
+            <label for="firstName"> FIRST NAME   </label>
+            <label for="lastName" class="focus"> LAST NAME  </label>
+            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="lastName" name="lastName">
+            <label for="email"> EMAIL    </label>
+            <label for="phoneNumber"> PHONE NUMBER  </label>
+            <input type="email" id="email" name="email">
+            <input type="tel" id="phoneNumber" name="phoneNumber">
+            <label for="password"> PASSWORD  </label>
+            <label for="confirmPassword"> CONFIRM PASSWORD </label>
+            <input type="password" id="password" name="password" class="error">
+            <input type="password" id="confirmPassword" name="confirmPassword" class="error">
+        </fieldset>
+        </div>
+        <button type="submit" name="send">Create Account</button>
+        <p class="loginPromptText">Already have an account? <a href="#">Log in</a></p>
+    </main> 
+</body>
+</html>
